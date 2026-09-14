@@ -1,13 +1,15 @@
 [project]
 name = "cherrynova"
-version = "0.1.0"
+version = "0.2.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
     { name = "cherrynova", email = "marialubida31@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "torch>=2.14.0",
+]
 
 [tool.maturin]
 module-name = "cherrynova._core"
@@ -20,3 +22,8 @@ cache-keys = [{ file = "pyproject.toml" }, { file = "src/**/*.rs" }, { file = "C
 [build-system]
 requires = ["maturin>=1.0,<2.0"]
 build-backend = "maturin"
+
+[dependency-groups]
+dev = [
+    "maturin>=1.15.0",
+]
