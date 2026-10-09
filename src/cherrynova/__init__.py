@@ -47,3 +47,5 @@ from cherrynova.differential.discrete import diff
 
 def hello() -> str:
     return hello_from_bin()
+
+from cherrynova.model.regression import LinearRegression
