@@ -1,6 +1,6 @@
 [project]
 name = "cherrynova"
-version = "0.5.0"
+version = "0.6.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
@@ -10,6 +10,10 @@ requires-python = ">=3.12"
 dependencies = [
     "matplotlib>=3.11.2",
     "numpy>=2.5.3",
+    "onnx>=1.23.2",
+    "onnxruntime>=1.32.0",
+    "onnxscript>=0.7.2",
+    "scikit-learn>=1.9.1",
     "torch>=2.14.0",
 ]
 
@@ -28,4 +32,5 @@ build-backend = "maturin"
 [dependency-groups]
 dev = [
     "maturin>=1.15.0",
+    "pandas>=3.1.1",
 ]
